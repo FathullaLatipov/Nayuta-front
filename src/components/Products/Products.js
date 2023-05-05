@@ -8,10 +8,10 @@ const Products = () => {
   const { products } = useUserContext()
   const { t } = useTranslation();
 
-  const Products = () =>{
-    const {products} = useUserContext()
-    const {t} = useTranslation()
-  }
+  // const Products = () =>{
+  //   const {products} = useUserContext()
+  //   const {t} = useTranslation()
+  // }
 
   return (
     <div className='productspage'>
@@ -28,7 +28,7 @@ const Products = () => {
                 <p>{item?.description} </p>
               </div>
               {/* <Link to={'/uslugi/${item.link.split('/').at(-1)}'} className='btn-products'>{t("button.title")}</Link> */}
-              <Link to={`/uslugi/${item.link.split('/').at(-1)}`} className='btn-products'>{t("button.title")}</Link>
+              <Link to={`/uslugi/${item.link.split('/')[item.link.split('/').length - 1]}`} className='btn-products'>{t("button.title")}</Link>
             </div>
 
           ))

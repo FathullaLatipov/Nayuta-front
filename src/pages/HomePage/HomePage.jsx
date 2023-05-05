@@ -24,10 +24,10 @@ const HomePage = () => {
         <Spinner stroke={"#000"} position={"static"} height={720} bgc={"#fff"} />
       }
       <div id="calculatorhref" className="container load-anim mb-5">
-        <Carousel indicators={false  } interval={1000}>
+        <Carousel indicators={false} interval={1000}>
           {
             carousels?.map((item, key) => (
-              <Carousel.Item>
+              <Carousel.Item key={key}>
                 <section className='hero'>
                   <div className='hero-container'>
                     <div className='hero-text'>

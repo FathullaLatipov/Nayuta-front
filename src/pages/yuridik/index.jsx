@@ -40,7 +40,7 @@ const Yuridik = () => {
                         <div className="grid-accordion">
                             {
                                 legalcredit?.map((item, key) => (
-                                    <>
+                                    <React.Fragment key={key}>
                                         <Accordion.Item eventKey={key}>
                                             <Accordion.Header>
                                                 <h2 style={{
@@ -74,7 +74,7 @@ const Yuridik = () => {
                                                 </div>
                                             </Accordion.Body>
                                         </Accordion.Item>
-                                    </>
+                                    </React.Fragment>
                                 ))
                             }
 

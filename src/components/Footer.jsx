@@ -31,20 +31,20 @@ function Footer() {
               {t("footer.left6")}
             </Link>
             <a href='tel:+998781503332'>
-              <i class="fa-solid fa-phone" id='icons'></i>
+              <i className="fa-solid fa-phone" id='icons'></i>
               +998 78 150 33 32
             </a>
             <a href='https://t.me/nayuta_mmt' target='_blank'>
-              <i class="fa-brands fa-telegram" id='icons'></i>
+              <i className="fa-brands fa-telegram" id='icons'></i>
               Telegram
             </a>
             <a href='https://www.instagram.com/nayuta.uz/?igshid=MTIyMzRjYmRlZg%3D%3D' target='_blank'>
-              <i class="fab fa-instagram" id='icons' />
+              <i className="fab fa-instagram" id='icons' />
               Instagram
             </a>
             <Link to='javascript:void(0)'
               onClick={() => window.location = 'mailto: info@nayuta.uz'}>
-              <i class="fa-regular fa-envelope" id='icons'></i>
+              <i className="fa-regular fa-envelope" id='icons'></i>
               info@nayuta.uz
             </Link>
           </div>
