@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  padding: 90px 0 0 0;
+  box-sizing: border-box;
+  &.scroll {
+    height: 100vh;
+    overflow: hidden;
+  }
+  &.modal-open {
+    padding-right: 0;
+  }
+}
+@media screen and (max-width: 426px) {
+  body {
+    margin: 0;
+    padding: 80px 0 0 0;
+    box-sizing: border-box;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+.load-anim {
+  animation: loadAnim 1s 1;
+}
+
+@keyframes loadAnim {
+  from {
+    opacity: 0;
+    transform: translateY(0) scale(1);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+// --bs-accordion-border-color: #ffffff;
+.accordion-button:not(.collapsed) {
+  color: #fff !important;
+  background: linear-gradient(90deg, #5c7ae8 0%, #76d7a1 100%) !important;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+}
+
+.accordion-button:link,
+.accordion-button:visited,
+.accordion-button:active {
+  background-color: linear-gradient(90deg, #5c7ae8 0%, #76d7a1 100%) !important;
+  color: #fff !important;
+  text-decoration: none !important;
+  border: hidden !important;
+  border-color: #fff !important;
+  box-shadow: 0px !important;
+
+  color: #ffffff;
+}
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+  @media screen and (max-width: 426px) {
+    max-width: 363px;
+    padding: 0 10px;
+  }
+}
+
+input {
+  border: none;
+  outline: none;
+  padding: 8px 12px;
+}
+
+.accordion-button {
+  background: #ffffff;
+  box-shadow: 0px 0px 20px rgba(51, 96, 231, 0.38);
+  border-radius: 15px;
+  color: #231f20 !important;
+  text-align: center !important;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.accordion {
+  background-color: #fff;
+  border-top: 44px !important;
+}
+.accordion-button {
+  border-radius: 15px !important;
+  text-align: center !important;
+  height: 80px;
+}
+.accordion-item {
+  margin-bottom: 30px;
+  background: #ffffff;
+
+  border-radius: 15px;
+}
+
+.accordion-body p {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 23px;
+  
+  color: #231F20;
+}
+
+.accordion-item:first-of-type {
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  border: none;
+}
+.accordion-item:last-of-type {
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}

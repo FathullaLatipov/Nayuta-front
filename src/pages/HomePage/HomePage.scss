@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+section {
+  font-family: "Montserrat";
+  margin-top: -130px;
+}
+.hero-container {
+  height: 100%;
+  width: 100%;
+  margin-top: 50px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.hero-text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #231f20;
+  margin-bottom: 40px;
+}
+.hero-text h1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  margin-bottom: 60px;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 73px;
+  color: #1942df;
+  width: 509px;
+}
+.hero-text h5 {
+  font-size: 19px;
+  line-height: 23px;
+  margin-top: -30px;
+  color: #231f20;
+  width: 572px;
+  margin-bottom: 80px;
+}
+.hero-img img {
+  width: 680px;
+  height: 780px;
+}
+.carousel-control-prev {
+  display: none;
+}
+.carousel-control-next {
+  display: none;
+}
+.see-more {
+  a {
+    padding: 16px 45px;
+    color: white;
+    z-index: 1000;
+    background: #ff5a3a;
+    box-shadow: -3px 4px 7px rgba(255, 90, 58, 0.4);
+    border-radius: 50px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .see-more {
+    display: block;
+  }
+  .hero-container {
+    flex-direction: column;
+    margin-top: 135px;
+    text-align: center;
+    margin-left: -7px;
+    .hero-text {
+      text-align: left;
+      padding-left: 12px;
+      h1 {
+        width: 100%;
+        height: 100%;
+        font-size: 30px;
+        line-height: 37px;
+        margin-top: 30px;
+      }
+      h5 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        width: 330px;
+        margin-top: 40px;
+      }
+    }
+    .hero-img {
+      width: 100%;
+    }
+    .hero-img img {
+      width: 330px;
+      height: 550px;
+      object-fit: contain;
+      margin-top: -550px;
+      margin-left: 20px;
+    }
+    .see-more {
+      display: flex;
+      justify-content: center;
+      margin-top: 340px;
+      button {
+        border: none;
+        background: #ff5a3a;
+        box-shadow: -3px 4px 7px rgba(255, 90, 58, 0.4);
+        border-radius: 50px;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        color: #ffffff;
+        padding: 20px 45px;
+        margin-top: 450px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 380px) {
+  .hero-img {
+    width: 100%;
+  }
+  .hero-img img {
+    width: 330px;
+    height: 550px;
+    object-fit: contain;
+    margin-top: -80px;
+  }
+  .hero-text {
+    padding-left: 30px;
+  }
+}

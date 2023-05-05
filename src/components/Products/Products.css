@@ -1,0 +1,109 @@
+.productspage {
+    height: 100%;
+}
+
+.productspage h1 {
+    color: #1942DF;
+    /* margin-left: 150px; */
+    font-size: 40px;
+    line-height: 49px;
+    margin-bottom: 30px;
+}
+
+.products-container {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 150px;
+
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 30px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(51, 96, 231, 0.2);
+    border-radius: 15px;
+    margin: 10px;
+    width: 100%;
+    max-width: 275px;
+
+}
+
+.btn-products {
+    transition: opacity 0.1s ease-out;
+    opacity: 0;
+}
+
+.products:hover .btn-products {
+    display: block;
+    opacity: 1;
+    color: white;
+    width: 144px;
+    height: 32px;
+    background: #FF5A3A;
+    box-shadow: -3px 4px 8px rgba(255, 90, 58, 0.4);
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    border: none;
+    transition: 2s ease-out 100ms
+}
+
+.btn-products {
+    color: white;
+    width: 144px;
+    height: 32px;
+    background: #FF5A3A;
+    box-shadow: -3px 4px 8px rgba(255, 90, 58, 0.4);
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    border: none;
+
+}
+
+.products h4 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.products p {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width: 900px) {
+    .products-container {
+        display: flex;
+        /* width: 450px; */
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        /* padding: 30px; */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .productspage h1 {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 30px;
+        color: #1942DF;
+    }
+}
+
+.img.factoring {
+    width: 145px;
+    height: 300px;
+}

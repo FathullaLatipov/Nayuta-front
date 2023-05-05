@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    font-family: 'Montserrat';
+}
+.hero{
+    width: 80%;
+    margin: 0 auto;
+}
+.hero-container{
+    height: 100%;
+    width: 100%;
+    margin-top: 80px;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+.hero-text{
+    font-size: 14px;
+    font-weight: 400;
+    color: #231F20;
+    margin-bottom: 40px;
+}
+.hero-text h1{
+    font-size: 60px ;
+    line-height: 73px;
+    color: #1942DF;;
+    margin: 0 0 70px;
+    width: 700px;
+    height: 146px;
+}
+.hero-text h5{
+    font-size: 19px;
+    line-height: 23px;
+    margin-top: -30px;
+    color: #231F20;
+}
+.hero-img{
+    width: 495px;
+    height: 504px;
+}
+.hero-text .btn {
+    display: inline-block;
+    color: white;
+    background: #FF5A3A;
+    box-shadow: -3px 4px 8px rgba(255, 90, 58, 0.4);
+    border-radius: 50px;
+    padding: 12px 30px;
+    line-height: 1.4;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 70px;
+    width: 180px;
+    height: 55px;
+}
+@media screen and (max-width: 1340px){
+    section{
+        transition: .2s;
+    }
+    .hero{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .hero-img img{
+        width: 260px;
+        height: auto;
+    }
+    .hero-container{
+        margin-top: 30px;
+    }
+    .hero-text h1{
+        width: 500px;
+        font-size: 40px;
+        line-height: 55px;
+        margin: 0 0 30px;
+    }
+    .hero-text h5{
+        margin-top: -30px;
+        width: 500px;
+    }
+}
+@media screen and (max-width: 1195px){
+    .hero{
+        width: 60%;
+        margin: 0 auto;
+    }
+    .hero-img img{
+        width: 460px;
+        height: auto;
+    }
+    .hero-container{
+        display: grid;
+    grid-template-columns:20px;
+    align-items: center;
+    }
+    .hero-text h1{
+        width: 700px;
+        font-size: 40px;
+        line-height: 55px;
+        margin: 0 0 30px;
+    }
+    .hero-text h5{
+        margin-top: -30px;
+        width: 500px;
+    }
+}
+@media screen and (max-width: 900px){
+    .hero{
+        width: 60%;
+        margin: 0 auto;
+    }
+    .hero-img img{
+        width: 460px;
+        height: auto;
+    }
+    .hero-container{
+        display: grid;
+    grid-template-columns:20px;
+    align-items: center;
+    }
+    .hero-text h1{
+        width: 500px;
+        font-size: 40px;
+        line-height: 55px;
+        margin: 0 0 30px;
+    }
+    .hero-text h5{
+        margin-top: -30px;
+        width: 500px;
+    }
+    .hero-img img{
+        width: 460px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 690px){
+    .hero{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .hero-container{
+       align-items: center;
+    }
+    .hero-text h1{
+        width: 500px;
+        font-size: 40px;
+        line-height: 55px;
+        margin: 0 0 30px;
+    }
+    .hero-text h5{
+        margin-top: -30px;
+        width: 500px;
+    }
+    .hero-img img{
+        width: 400px;
+        height: auto;
+    }
+.hero-text a {
+    font-size: 15px;
+    font-weight: 500;
+}
+}
+@media screen and (max-width: 620px){
+    .hero{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .hero-container{
+       align-items: center;
+       width: 300px;
+    }
+    .hero-text h1{
+        width: 400px;
+        font-size: 35px;
+        line-height: 55px;
+        margin: 0 0 30px;
+    }
+    .hero-text h5{
+        margin-top: -50px;
+        width: 400px;
+        font-size: 18px;
+    }
+    .hero-img img{
+        width: 400px;
+        height: auto;
+    }
+}
+@media screen and (max-width: 600px){
+    .hero{
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 570px){
+    .hero{
+        width: 90%;
+        margin: 0 auto;
+        align-items: center;
+        margin-left: 50px;
+    }
+  
+}
+@media screen and (max-width: 520px){
+    .hero{
+        width: 400px;
+        margin: 0 auto;
+    }
+    .hero-text h1{
+        width: 350px;
+        font-size: 30px;
+        line-height: 37px;
+        margin: 0 0 30px;
+    }
+    .hero-text h5{
+        font-size: 16px;
+        line-height: 20px;
+        margin-top: -40px;
+        width: 350px;
+        font-size: 18px;
+    }
+  
+}
+@media screen and (max-width: 390px){
+    .hero{
+        width: 90%;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+    }
+    .hero-text h1{
+        width: 350px;
+        font-size: 30px;
+        line-height: 37px;
+        margin: 0 0 30px;
+    }
+    .hero-text h5{
+        font-size: 16px;
+        line-height: 20px;
+        margin-top: -80px;
+        width: 350px;
+        font-size: 18px;
+    }
+    .hero-img{
+        width: 292px;
+    }
+     .hero-img img{
+        width: 292px;
+        height: 297px;
+        margin-left: 30px;
+    }
+}
+@media screen and (max-width: 370px){
+    .hero{
+        width: 100%;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+    }
+    .hero-text h1{
+        width: 350px;
+        font-size: 30px;
+        line-height: 37px;
+        margin: 0 0 30px;
+    }
+    .hero-text h5{
+        font-size: 16px;
+        line-height: 20px;
+        margin-top: -80px;
+        width: 350px;
+        font-size: 18px;
+    }
+    .hero-img{
+        width: 292px;
+    }
+     .hero-img img{
+        width: 292px;
+        height: 297px;
+        margin-left: 30px;
+    }
+}

@@ -1,0 +1,154 @@
+{
+    "faq": {
+        "title": "Ko’p beriladigan savollar"
+    },
+    "button": {
+        "title": "Batafsil"
+    },
+    "table": {
+        "title": "Nima uchun bank bilan emas, biz bilan bog'lanish yaxshiroqdir?",
+        "table_title1": "Nayuta",
+        "table_title2": "Bank",
+        "table_title3": "Bepul konsultatsiya",
+        "table_title4": "Mavjud",
+        "table_title5": "Kamdan kam",
+        "table_title6": "Skoring",
+        "table_title7": "1 ish kuni",
+        "table_title8": "2-3 ish kuni",
+        "table_title9": "Berilishi",
+        "table_title10": "Ariza topshirilgan kunning ertasiga",
+        "table_title11": "Mahsulot/xizmatga bog’liq",
+        "table_title12": "Shartlar",
+        "table_title13": "Biometrik passport yoki ID karta kifoya",
+        "table_title14": "Hujjatlar to’plami",
+        "desc": "Sizning vaqtingiz biz uchun ustuvor ahamiyatga ega, shuning uchun bankdan farqli o'laroq, biz so'rovlarni zudlik bilan ko'rib chiqamiz va sizga kerak bo'lgan moliyaviy kalitni taklif qilamiz."
+    },
+    "doveriya": {
+        "title": "Bizga ishonishingiz mumkin",
+        "text": "Biz O‘zbekiston Respublikasining amaldagi qonunchiligi asosida faoliyat yuritamiz. Biz “Ro‘yxatdan o‘tganlik to‘g‘risidagi guvohnoma”ga egamiz  va  O‘zbekiston Respublikasi Markaziy bankining mikromoliya tashkilotlari reestriga kiritilganmiz ",
+        "link": "(97-sonli litsenziya bilan).",
+        "call": "Biz bilan bog’laning va xodimlarimiz savollarga javob berishadi.",
+        "questions": "Savollaringiz bormi?",
+        "callus": "Bog'lanish"
+    },
+    "products": {
+        "title": "Bizning mahsulotlarimiz",
+        "text1": "Batafsil ma'lumot olish uchun biz bilan",
+        "text2": "va bepul konsultatsiya oling.",
+        "a": "bog'laning"
+    },
+    "footer": {
+        "left1": "Kompaniya haqida",
+        "left2": "Xizmatlar:",
+        "left3": "Jismoniy shaxslar uchun",
+        "left4": "Yuridik shaxslar uchun",
+        "left5": "Konsultatsiya",
+        "left6": "Kontaktlar:",
+        "left7": "Ish vaqti:",
+        "left8": "Manzil:",
+        "left9": " O‘zbekiston Respublikasi, Toshkent sh.,",
+        "left10": "Mirobod tumani, Nukus ko‘chasi, 29-uy, 10015",
+        "ishvaqti": "Ish vaqti:",
+        "duju": "Du-Ju: 9:00 – 18:00",
+        "sha": "Sha: 10:00 – 17:00",
+        "yak": "Yak – dam olish kuni"
+    },
+    "physical": {
+        "title": "Jismoniy shaxslar",
+        "text": "Turli maqsadlar — yagona yechim. \n Nayuta mijozlarga kafillarsiz kredit rasmiylashtirishni taklif etadi. Bizning mahsulotlarimiz orasidan o’zingizga to’g’ri keladiganini tanlash uchun quyidagilar bilan tanishib chiqishingiz mumkin.",
+        "start": "dan",
+        "end": "gacha",
+        "year": "Yillik",
+        "btn": "Online hisoblang"
+    },
+    "yuridik": {
+        "title": "Yuridik shaxslar",
+        "text1": "Yuridik shaxslar uchun kreditlar biznesning moliyaviy ko’rsatkichlarini oshirish va to’lov qobiliyatini saqlab qolgan holda moliyaviy stabillashtirishga yordam beradi. Biznes uchun ko’proq takliflarimiz haqida quyidan bilib oling.",
+        "text2": "Quyida bizning biznes takliflarimiz haqida ko'proq bilib oling.",
+        "start": "dan",
+        "end": "gacha",
+        "year": "yiliga"
+    },
+    "company": {
+        "title": "Kompaniya haqida",
+        "text1": "Nayuta Mikromoliya Tashkiloti o'z faoliyatida yapon modeliga amal qiladi va xodimlarning Yaponiyada orttirgan tajribasi ularga mijozlar bilan professional darajada ishlashda qo’l keladi.",
+        "text2": "Biz moliyaviy muammolaringizga professional yechim topishni maqsad qilganmiz. Yaponiyada biznes shunday quriladi, ya’ni u yerda mijoz va uning ehtiyojlari birinchi o'rinda turadi.",
+        "text3": "Ushbu yondashuvni “Nayuta”da qo'llash orqali biz turli moliyaviy vaziyatlarda bo'lgan odamlarning hayotini osonlashtiramiz va biznesni rivojlantirishni qo'llab-quvvatlaymiz.",
+        "title2": "Kompaniya hujjatlari",
+        "btn1": "Markaziy bankdan kompaniya faoliyati uchun ruxsatnoma",
+        "btn2": "Ro'yxatdan o'tish guvohnomasi",
+        "mission": "Missiya",
+        "misson1": "Nayuta yapon tilida bu cheksiz sonni bildiradi. Bu bizning kompaniya sifatida nimaga intilayotganimizni aniq aks ettiradi, ya’ni mijozlarimizning kapitali va ishonchini cheksiz darajada oshirish.",
+        "misson2": "Biz halollik bilan natijaga va, birinchi navbatda, insonga e'tibor qaratamiz."
+    },
+    "consul": {
+        "title": "Biz bepul konsultatsiya beramiz va siz uchun mos bo’lgan moliyaviy xizmatimizni taklif etamiz.",
+        "ul": "Quyidagi hollarda sizga konsultatsiyamiz kerak bo’ladi: ",
+        "li1": "Moliyaviy muammoingiz uchun professional yechim izlasangiz;",
+        "li2": "Aynan qaysi xizmatimiz sizga kerakligiga ikkilanayotgan bo’lsangiz;",
+        "li3": "Kimga murojaat qilishni bilmayotgan bo’lsangiz.",
+        "text": "Xodimlarimizdan bepul konsultatsiya oling"
+    },
+    "prava": {
+        "title": "Barcha huquqlar himoyalangan 2023"
+    },
+    "header": {
+        "link1": "Asosiy",
+        "link2": "Xizmatlar",
+        "link3": "Kompaniya",
+        "link4": "Konsultatsiya",
+        "link5": "Kontaktlar",
+        "yur": "Yuridik shaxslar uchun",
+        "fiz": "Jismoniy shaxslar uchun"
+    },
+    "calculator": {
+        "calcheader": "O'zingizning parametrlaringiz bo'yicha kreditni hisoblang",
+        "annuity": "Annuitet usuli",
+        "dif": "Differensiyalashgan",
+        "labels": {
+            "kimga": "Kimga",
+            "tur": "Kredit turi",
+            "narx": "Mahsulotlar / xizmatlar narxi",
+            "tolov": "Boshlang'ich to'lov (%)",
+            "miqdor": "Kredit miqdori",
+            "imtiyoz": "Imtiyozli davr",
+            "stavka": "Stavka foizi",
+            "qaytarish": "To'lovni qaytarish tartibi",
+            "muddat": "Kredit muddati"
+        },
+        "inputs": {
+            "jismoniy": "Jismoniy shaxslar uchun",
+            "yuridik": "Yuridik shaxslar uchun",
+            "avto": "kredit",
+            "sum": "sum",
+            "oy": "oy",
+            "yiliga": "yiliga",
+            "annuitet": "Annuitet",
+            "hisoblash": "Hisoblash",
+            "subtitle": "* Hisob-kitoblar dastlabki hisoblanadi. Tafsilotlarni aniqlashtirish uchun",
+            "span": "biz bilan bog'laning",
+            "subtitle2": "va bepul maslahat oling."
+        }
+    },
+    "parametr": {
+        "parametrkredit": "Kredit variantlari",
+        "narx": "Mahsulotlar / xizmatlar narxi",
+        "tolov": "Dastlabki to'lov",
+        "summa": "Kredit miqdori",
+        "muddat": "Kredit muddati",
+        "foiz": "Stavka foizi",
+        "qaytarish": "To'lovni qaytarish tartibi",
+        "rezultat": "Hisoblash natijalari",
+        "jami": "Jami to'lovlar",
+        "ortiqcha": "Ortiqcha to'lov",
+        "pechat": "Chop etish",
+        "rows": {
+            "data": "Sana",
+            "qolgan": "Kredit balansi",
+            "qaytarish": "Kreditni to'lash",
+            "kredit": "miqdori",
+            "prosent": "Kredit bo'yicha foizlar miqdori",
+            "itog": "Jami to'lov"
+        }
+    }
+}
