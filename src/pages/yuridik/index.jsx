@@ -8,6 +8,7 @@ import { useTranslation } from 'react-i18next'
 import calImg from './Estimate.svg'
 import { HashLink } from 'react-router-hash-link';
 import useScrollDirection from "./scroll";
+import { Helmet } from 'react-helmet';
 
 
 
@@ -19,6 +20,15 @@ const Yuridik = () => {
 
     return (
         <>
+        <Helmet>
+        <title>Nayuta</title>
+          <meta
+        name='description'
+        content='Get info about Legal individuals in Nayuta Credit Bank '
+        />
+         <meta 
+        name='keywords' content='Bank, Company, Legal, Individuals, Nayuta, Credit,'/>
+        </Helmet>
             <HashLink smooth to="/#calculator" className='yuridikbutton-desktop'><img src={calImg} alt="" />{t("physical.btn")}</HashLink>
             <div className='container yuridik load-anim'>
                 <div className={`header2 ${scrollDirection === "down" ? "hide" : "show"}`}>
@@ -40,7 +50,7 @@ const Yuridik = () => {
                         <div className="grid-accordion">
                             {
                                 legalcredit?.map((item, key) => (
-                                    <React.Fragment key={key}>
+                                    <>
                                         <Accordion.Item eventKey={key}>
                                             <Accordion.Header>
                                                 <h2 style={{
@@ -74,7 +84,7 @@ const Yuridik = () => {
                                                 </div>
                                             </Accordion.Body>
                                         </Accordion.Item>
-                                    </React.Fragment>
+                                    </>
                                 ))
                             }
 

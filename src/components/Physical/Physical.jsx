@@ -8,6 +8,7 @@ import calImg from '../../pages/yuridik/Estimate.svg'
 import useScrollDirection from '../../pages/yuridik/scroll';
 import '../../pages/yuridik/yuridik.scss'
 import { HashLink } from 'react-router-hash-link';
+import { Helmet } from 'react-helmet';
 
 const Physical = () => {
   const { individualcreditType, individualcredit, whosecredit } = useUserContext()
@@ -15,6 +16,15 @@ const Physical = () => {
   const scrollDirection = useScrollDirection();
   return (
     <div className='physicalload-anim'>
+       <Helmet>
+       <title>Nayuta</title>
+          <meta
+        name='description'
+        content='Get info about Physical individuals in Nayuta Credit Bank '
+        />
+         <meta 
+        name='keywords' content='Bank, Physical, Individuals, Nayuta, Credit, Calculate, Calculator'/>
+       </Helmet>
         <div className={`header2 ${scrollDirection === "down" ? "hide" : "show"}`}>
             <HashLink smooth to="/#calculator" className='yuridikbutton'> <img src={calImg} alt="" />{t("physical.btn")}</HashLink>
         </div>

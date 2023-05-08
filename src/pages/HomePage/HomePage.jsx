@@ -12,6 +12,7 @@ import AccordionHome from '../../components/accordion/accordion-home';
 import { useUserContext } from '../../components/context/home-context';
 import { useTranslation } from 'react-i18next';
 import Spinner from '../../components/loading/loading';
+import { Helmet } from 'react-helmet';
 
 const HomePage = () => {
   const { carousels, loading } = useUserContext()
@@ -24,10 +25,19 @@ const HomePage = () => {
         <Spinner stroke={"#000"} position={"static"} height={720} bgc={"#fff"} />
       }
       <div id="calculatorhref" className="container load-anim mb-5">
-        <Carousel indicators={false} interval={1000}>
+        <Helmet>
+          <title>Nayuta</title>
+          <meta
+        name='description'
+        content='Get info about Nayuta Credit Bank '
+        />
+         <meta 
+        name='keywords' content='Bank, Nayuta, Credit, Calculate, Calculator'/>
+        </Helmet>
+        <Carousel indicators={false  } interval={1000}>
           {
             carousels?.map((item, key) => (
-              <Carousel.Item key={key}>
+              <Carousel.Item>
                 <section className='hero'>
                   <div className='hero-container'>
                     <div className='hero-text'>

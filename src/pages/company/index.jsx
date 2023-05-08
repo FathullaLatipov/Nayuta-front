@@ -5,10 +5,21 @@ import BeforeImg from '../../assets/images/beforeimg.png'
 import InfImg from '../../assets/images/infinity.png'
 import MyPdf from '../../98117f01-fc4b-4024-a692-67c35b2a4f50.pdf'
 import { useTranslation } from 'react-i18next'
+import { Helmet } from 'react-helmet'
 const Company = () => {
     const { t } = useTranslation()
     return (
         <div className='load-anim'>
+            <Helmet>
+            <title>Nayuta</title>
+          <meta
+        name='description'
+        content='Get info about Company in Nayuta Credit Bank '
+        
+        />
+           <meta 
+        name='keywords' content='Bank, Company, Nayuta, Credit,'/>
+            </Helmet>
             <div className="company-banner container">
                 <div className="banner-title">
                     <h2>{t("company.title")}</h2>

@@ -5,12 +5,22 @@ import logo from '../img/nayuta.svg';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Copyr from './cop.svg'
+import { Helmet } from 'react-helmet';
 
 
 function Footer() {
   const { t } = useTranslation();
   return (
     <div id='contact' className='footer-container'>
+      <Helmet>
+      <title>Nayuta</title>
+          <meta
+        name='description'
+        content='Get Contact info about Nayuta Credit Bank '
+        />
+           <meta 
+        name='keywords' content='Bank, Contacts, Nayuta, Credit'/>
+      </Helmet>
       <section className='footer-subscription'>
         <img className='footer-subscription-heading'
           src={logo}
@@ -31,20 +41,20 @@ function Footer() {
               {t("footer.left6")}
             </Link>
             <a href='tel:+998781503332'>
-              <i className="fa-solid fa-phone" id='icons'></i>
+              <i class="fa-solid fa-phone" id='icons'></i>
               +998 78 150 33 32
             </a>
             <a href='https://t.me/nayuta_mmt' target='_blank'>
-              <i className="fa-brands fa-telegram" id='icons'></i>
+              <i class="fa-brands fa-telegram" id='icons'></i>
               Telegram
             </a>
             <a href='https://www.instagram.com/nayuta.uz/?igshid=MTIyMzRjYmRlZg%3D%3D' target='_blank'>
-              <i className="fab fa-instagram" id='icons' />
+              <i class="fab fa-instagram" id='icons' />
               Instagram
             </a>
             <Link to='javascript:void(0)'
               onClick={() => window.location = 'mailto: info@nayuta.uz'}>
-              <i className="fa-regular fa-envelope" id='icons'></i>
+              <i class="fa-regular fa-envelope" id='icons'></i>
               info@nayuta.uz
             </Link>
           </div>

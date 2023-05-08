@@ -21,6 +21,7 @@ const App = () => {
   return (
     <>
       <Navbar />
+      
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='/consultation' element={<Consultaion />} />
