@@ -1,5 +1,5 @@
 
-const URL = "https://yruoebgair.tk/api/v1";
+const URL = "https://api.nayuta.uz/api/v1";
 
 // console.log(lang, 'lang');
 
