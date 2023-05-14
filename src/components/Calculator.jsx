@@ -8,10 +8,12 @@ import Pdf from "react-to-pdf";
 import Pechat from './Vector.svg'
 import { useTranslation } from 'react-i18next';
 import Spinner from './loading/loading';
+
 const Calculator = () => {
   const ref = createRef();
 
-  const [price, setPrice] = useState(50000000)
+
+  const [price, setPrice] = useState('50000000')
   const [percentage, setPercentage] = useState(16)
   const [interest, setInterest] = useState(20)
   const [schedule, setSchedule] = useState('annuity')
@@ -19,7 +21,6 @@ const Calculator = () => {
   const [data, setData] = useState()
   const [amount, setAmount] = useState()
   const [loading, setLoading] = useState(false)
-
   console.log(amount, 'amount');
   const [show, setShow] = useState(false);
   // const [calculateList, setCalculateList] = useState()
@@ -48,6 +49,8 @@ const Calculator = () => {
       .catch(err => console.log(err))
   }
   const { t } = useTranslation()
+
+
   return (
     <section id='calculator'>
       <div className="calc-wrapper mt-5">
@@ -66,9 +69,12 @@ const Calculator = () => {
           </div>
 
           <div className="first-child-form">
+            
             <Form.Group className="" controlId="formBasicPassword">
               <Form.Label>{t("calculator.labels.narx")}</Form.Label>
-              <Form.Control value={price} onChange={(e) => setPrice(e.target.value)} type="text" placeholder="50000" />
+              <Form.Control value={
+                (price).replace(/\B(?=(\d{3})+(?!\d))/g, " ") 
+              } onChange={(e) => setPrice(e.target.value)} type="text" placeholder="50000" />
             </Form.Group>
             <Form.Select disabled onChange={(e) => setSchedule(e.target.value)} aria-label="Default select example">
               <option value="annuity">{t("calculator.inputs.sum")}</option>
