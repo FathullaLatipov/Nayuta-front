@@ -19,8 +19,10 @@ const Calculator = () => {
   const [schedule, setSchedule] = useState('annuity')
   const [period, setPeriod] = useState(24)
   const [data, setData] = useState()
+  console.log(data,  'data');
   const [amount, setAmount] = useState()
   const [loading, setLoading] = useState(false)
+  console.log(loading,  'loading');
   console.log(amount, 'amount');
   const [show, setShow] = useState(false);
   // const [calculateList, setCalculateList] = useState()
@@ -72,9 +74,7 @@ const Calculator = () => {
             
             <Form.Group className="" controlId="formBasicPassword">
               <Form.Label>{t("calculator.labels.narx")}</Form.Label>
-              <Form.Control value={
-                (price).replace(/\B(?=(\d{3})+(?!\d))/g, " ") 
-              } onChange={(e) => setPrice(e.target.value)} type="text" placeholder="50000" />
+              <Form.Control value={price} onChange={(e) => setPrice(e.target.value)} type="text" placeholder="50000" />
             </Form.Group>
             <Form.Select disabled onChange={(e) => setSchedule(e.target.value)} aria-label="Default select example">
               <option value="annuity">{t("calculator.inputs.sum")}</option>
