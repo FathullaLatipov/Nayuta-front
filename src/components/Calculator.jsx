@@ -8,20 +8,13 @@ import Pdf from "react-to-pdf";
 import Pechat from './Vector.svg'
 import { useTranslation } from 'react-i18next';
 import Spinner from './loading/loading';
-<<<<<<< HEAD
 import CurrencyInput from 'react-currency-input-field';
-=======
->>>>>>> 81ab0cf3386c728562a6b0910183a21c07d4249a
 
 const Calculator = () => {
   const ref = createRef();
 
 
-<<<<<<< HEAD
   const [price, setPrice] = useState('')
-=======
-  const [price, setPrice] = useState('50000000')
->>>>>>> 81ab0cf3386c728562a6b0910183a21c07d4249a
   const [percentage, setPercentage] = useState(16)
   const [interest, setInterest] = useState(20)
   const [schedule, setSchedule] = useState('annuity')
@@ -63,7 +56,6 @@ const Calculator = () => {
       .catch(err => console.log(err))
   }
   const { t } = useTranslation()
-<<<<<<< HEAD
   // const [numChange, SetnumChange] = useState()
 
   // const handelChange = (value) =>{
@@ -73,10 +65,6 @@ const Calculator = () => {
   
   // const changer = new Intl.NumberFormat('en-US').format(num)
   // console.log(changer)
-=======
-
-
->>>>>>> 81ab0cf3386c728562a6b0910183a21c07d4249a
   return (
     <section id='calculator'>
     
