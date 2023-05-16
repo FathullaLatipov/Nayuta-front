@@ -11,7 +11,7 @@ function Navbar() {
   const { rates } = useUserContext()
 
   return (
-    <div className='currency'>
+    <div className='currency' id='currency'>
       <div className='currencyContainer'>
         <div className='flags'>
           <img src={usa} alt='' />

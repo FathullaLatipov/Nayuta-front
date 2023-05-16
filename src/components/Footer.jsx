@@ -6,10 +6,14 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Copyr from './cop.svg'
 import { Helmet } from 'react-helmet';
+import { HashLink } from 'react-router-hash-link';
+import useScrollDirection from "../pages/yuridik/scroll";
+import ScrollToTop from './scrollToTop';
 
 
 function Footer() {
   const { t } = useTranslation();
+  const scrollDirection = useScrollDirection();
   return (
     <div id='contact' className='footer-container'>
       <Helmet>
@@ -22,10 +26,17 @@ function Footer() {
         name='keywords' content='Bank, Contacts, Nayuta, Credit'/>
       </Helmet>
       <section className='footer-subscription'>
-        <img className='footer-subscription-heading'
+        {/* <img className='footer-subscription-heading'
+          href='/'
           src={logo}
           alt=''
-        />
+        /> */}
+         <HashLink smooth to="/#currency" className='footer-subscription-heading'><img src={logo} alt="" /></HashLink>
+
+                <div className={`header2 ${scrollDirection === "down" ? "hide" : "show"}`}>
+                    <HashLink smooth to="/#currency" className='footer-subscription-heading'> </HashLink>
+                </div>
+     <Link className='footer-subscription-heading' to='/'></Link>
       </section>
       <div className='footer-links'>
         <div className='footer-link-wrapper'>

@@ -8,25 +8,33 @@ import Pdf from "react-to-pdf";
 import Pechat from './Vector.svg'
 import { useTranslation } from 'react-i18next';
 import Spinner from './loading/loading';
+import CurrencyInput from 'react-currency-input-field';
+
 const Calculator = () => {
   const ref = createRef();
 
-  const [price, setPrice] = useState(50000000)
+
+  const [price, setPrice] = useState('')
   const [percentage, setPercentage] = useState(16)
   const [interest, setInterest] = useState(20)
   const [schedule, setSchedule] = useState('annuity')
   const [period, setPeriod] = useState(24)
   const [data, setData] = useState()
+  console.log(data,  'data');
   const [amount, setAmount] = useState()
   const [loading, setLoading] = useState(false)
-
+  console.log(loading,  'loading');
   console.log(amount, 'amount');
   const [show, setShow] = useState(false);
+  
+
+ 
   // const [calculateList, setCalculateList] = useState()
   // const { lang } = useUserContext()
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+  
   function Send(e) {
 
 
@@ -48,8 +56,18 @@ const Calculator = () => {
       .catch(err => console.log(err))
   }
   const { t } = useTranslation()
+  // const [numChange, SetnumChange] = useState()
+
+  // const handelChange = (value) =>{
+  //   setNum(value)
+  
+  // }
+  
+  // const changer = new Intl.NumberFormat('en-US').format(num)
+  // console.log(changer)
   return (
     <section id='calculator'>
+    
       <div className="calc-wrapper mt-5">
         <Form className='cal-form' onSubmit={Send}>
           <div className="cal-form-text">
@@ -66,11 +84,22 @@ const Calculator = () => {
           </div>
 
           <div className="first-child-form">
+            
             <Form.Group className="" controlId="formBasicPassword">
               <Form.Label>{t("calculator.labels.narx")}</Form.Label>
-              <Form.Control value={price} onChange={(e) => setPrice(e.target.value)} type="text" placeholder="50000" />
+              <CurrencyInput
+             id="input-example"
+             name='input-name'
+             placeholder='500000'
+             defaultValue={0}
+             decimalsLimit={7}
+             onValueChange={(value) => setPrice(value)}
+       />
+            {/* <Form.Control 
+           
+            value={price} type="text" placeholder="50000" /> */}
             </Form.Group>
-            <Form.Select disabled onChange={(e) => setSchedule(e.target.value)} aria-label="Default select example">
+            <Form.Select name="" id="" >
               <option value="annuity">{t("calculator.inputs.sum")}</option>
             </Form.Select>
             <Form.Group className="" controlId="formBasicPassword">
@@ -87,10 +116,20 @@ const Calculator = () => {
           <div className="second-child-form">
             <Form.Group className="" controlId="formBasicPassword">
               <Form.Label>{t("calculator.labels.miqdor")}</Form.Label>
-              <Form.Control value={
+              <CurrencyInput
+             id="input-example"
+             name='input-name'
+             placeholder='500000'
+             defaultValue={(price - ((percentage / 100) * price))}
+             decimalsLimit={7}
+             onValueChange={(value) => setPrice(value)}
+             value={(price - ((percentage / 100) * price))}
+             onChange={(e) => setAmount(e.target.value)}
+       />
+              {/* <Form.Control value={
                 (price - ((percentage / 100) * price))
               }
-                onChange={(e) => setAmount(e.target.value)} type="text" placeholder="" />
+                onChange={(e) => setAmount(e.target.value)} type="text" placeholder="" /> */}
             </Form.Group>
             <Form.Select disabled onChange={(e) => setSchedule(e.target.value)} aria-label="Default select example">
               <option value="annuity">{t("calculator.inputs.sum")}</option>
