@@ -12,6 +12,7 @@ import Yuridik from './pages/yuridik';
 import Company from './pages/company';
 import { useUserContext } from './components/context/home-context';
 import './i18next/i18next'
+import Partners from './pages/partners/Partners';
 
 const App = () => {
   const { active } = useUserContext()
@@ -30,6 +31,7 @@ const App = () => {
         <Route path='/company' element={<Company />} />
         <Route path='/contact' element={<Footer />} />
         <Route path='/navbar' element={<Navbar />} />
+        <Route path='/partners' element={<Partners/>}/>
       </Routes>
       <Footer />
     </>

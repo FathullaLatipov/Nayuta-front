@@ -19,7 +19,45 @@ export function PostData(endpoint, data, token) {
     )
 }
 
+export const getCarouselData = async () => {
+    try {
+        const response = await fetch(`${URL}/japanese-carousel/`);
+        const data = response.json();
+        return data;
+    } catch (error) {
+        console.log(error);
+    }
+}
 
+export const getJapaneeseProducts = async () => {
+    try {
+        const response = await fetch(`${URL}/japanese-product/`);
+        const data = response.json();
+        return data;
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+export const getJapaneeseTeam = async () => {
+    try {
+        const response = await fetch(`${URL}/japanese-team/`);
+        const data = response.json();
+        return data;
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+export const getJapaneesePdf = async () => {
+    try {
+        const response = await fetch(`${URL}/japanese-pdf/`);
+        const data = response.json();
+        return data;
+    } catch (error) {
+        console.log(error);
+    }
+}
 
 export function PutData(endpoint, data, token) {
     return fetch(`${URL + endpoint}`, {

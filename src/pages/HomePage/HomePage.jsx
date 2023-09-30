@@ -36,8 +36,8 @@ const HomePage = () => {
         </Helmet>
         <Carousel indicators={false  } interval={1000}>
           {
-            carousels?.map((item, key) => (
-              <Carousel.Item>
+            carousels?.map((item, idx) => (
+              <Carousel.Item key={idx}>
                 <section className='hero'>
                   <div className='hero-container'>
                     <div className='hero-text'>

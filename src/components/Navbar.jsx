@@ -12,12 +12,8 @@ const Navbar = () => {
   const pathname = window.location.pathname
   const navigate = useNavigate()
   const { lang, setLang, active, setActive } = useUserContext()
-  // useEffect(() => {
-  //   
-  // }, [])
   const { t, i18n } = useTranslation();
   const changeLanguage = (event) => {
-    //  setAge(event.target.value);
     i18n.changeLanguage(event);
   };
   return (
@@ -57,6 +53,7 @@ const Navbar = () => {
             }
             } className={pathname === '/consultation' ? 'active' : ''}>{t("header.link4")}</button>
             <a href='#contact' className={window.location.hash === '/contact' ? 'active' : ''} >{t("header.link5")}</a>
+            <Link className={pathname === '/partners' ? 'active' : ''} to="/partners">Partners</Link>
             <button onClick={() => {
               changeLanguage('ru')
               setLang("ru")
@@ -99,14 +96,23 @@ const Navbar = () => {
             }
             } to='/company'>{t("header.link3")}</Link>
             <Link className='navbar-link' onClick={() => {
-              setActive(!active)
-            }
+                setActive(!active)
+              }
             } to='/consultation'>{t("header.link4")}</Link>
 
-            <a style={{
-              borderBottom: "none",
-              paddingBottom: "0"
-            }} href='#contact' className='navbar-link' onClick={() => setActive(!active)} to='/'>{t("header.link5")}</a>
+            <a href='#contact' className='navbar-link' onClick={() => setActive(!active)} to='/'>{t("header.link5")}</a>
+
+            <Link 
+              className='navbar-link'
+              style={{
+                borderBottom: "none",
+                paddingBottom: "0"
+              }} 
+              onClick={() => {
+                  setActive(!active)
+                }
+              } 
+              to='/partners'>Partners</Link>
           </div>
           <div className="lang-container">
             <button onClick={() => {

@@ -10,12 +10,11 @@ const Consultaion = () => {
     <div className='consultation load-anim'>
       <Helmet>
       <title>Nayuta</title>
-          <meta
-        name='description'
-        content='Get info about Consultation in Nayuta Credit Bank '
+        <meta
+          name='description'
+          content='Get info about Consultation in Nayuta Credit Bank '
         />
-         <meta 
-        name='keywords' content='Bank, Consultation, Nayuta, Credit,'/>
+        <meta name='keywords' content='Bank, Consultation, Nayuta, Credit,'/>
       </Helmet>
       <div className="consultation-container">
         <div className="consultation-left">
