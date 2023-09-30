@@ -53,7 +53,7 @@ const Navbar = () => {
             }
             } className={pathname === '/consultation' ? 'active' : ''}>{t("header.link4")}</button>
             <a href='#contact' className={window.location.hash === '/contact' ? 'active' : ''} >{t("header.link5")}</a>
-            <Link className={pathname === '/partners' ? 'active' : ''} to="/partners">Partners</Link>
+            {/* <Link className={pathname === '/partners' ? 'active' : ''} to="/partners">Partners</Link> */}
             <button onClick={() => {
               changeLanguage('ru')
               setLang("ru")
@@ -102,7 +102,7 @@ const Navbar = () => {
 
             <a href='#contact' className='navbar-link' onClick={() => setActive(!active)} to='/'>{t("header.link5")}</a>
 
-            <Link 
+            {/* <Link 
               className='navbar-link'
               style={{
                 borderBottom: "none",
@@ -112,7 +112,7 @@ const Navbar = () => {
                   setActive(!active)
                 }
               } 
-              to='/partners'>Partners</Link>
+              to='/partners'>Partners</Link> */}
           </div>
           <div className="lang-container">
             <button onClick={() => {
