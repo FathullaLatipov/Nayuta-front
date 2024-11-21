@@ -53,7 +53,15 @@ function Footer() {
             </Link>
             <a href='tel:+998781503332'>
               <i className="fa-solid fa-phone" id='icons'></i>
-              +998 78 150 33 32
+              +998 55 511-33-32 
+            </a>
+            <a href='tel:+99881863033'>
+              {/* <i className="fa-solid" id='icons'></i> */}
+              +998 88 186-30-33
+            </a>
+            <a href='tel:+998881470033'>
+              {/* <i className="fa-solid" id='icons'></i> */}
+              +998 88 147-00-33
             </a>
             <a href='https://t.me/nayuta_mmt' target='_blank'>
               <i className="fa-brands fa-telegram" id='icons'></i>
@@ -79,11 +87,11 @@ function Footer() {
           </div>
           <div className='footer-link-items'>
             <Link to='/' className='addresslink'>{t("footer.left8")}</Link>
-            <Link to='https://yandex.uz/maps/10335/tashkent/house/YkAYdA9iS0YDQFprfX54cnVjYA==/?ll=69.282234%2C41.293904&z=16' target='_blank' className='address'>
+            <Link to='https://yandex.uz/maps/10335/tashkent/?ll=69.263914%2C41.275492&mode=search&sll=69.264000%2C41.275333&source=constructorLink&text=41.275333%2C69.264000&um=constructor%3Aa6d13edbb38b22e4c446f8712bf01729428a23a560aab6b90796c6c27bf05b58&z=18.56' target='_blank' className='address'>
 
               {t("footer.left9")}
               <br />
-              {t("footer.left10")}
+              {/* {t("footer.left10")} */}
             </Link>
             <br />
           </div>
