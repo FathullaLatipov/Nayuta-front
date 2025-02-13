@@ -20,9 +20,10 @@ export const UserContextProvider = ({ children }) => {
     useEffect(() => {
         setLoading(true)
         GetData(`/exchange-rates/`, lang)
-            .then(data => {
-                setRates(data)
-            })
+        .then(data => {
+            setRates(data);
+            setLoading(false);
+        })
             .catch(err => console.log(err))
         GetData(`/FAQ/`, lang)
             .then(data => {
