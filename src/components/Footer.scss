@@ -6,7 +6,7 @@
   justify-content: center;
   align-items: center;
   padding-right: 165px;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 #icons {
   padding-right: 15px;
@@ -318,7 +318,7 @@
     font-size: 24px;
   }
 }
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 450px) {
   .footer-link-wrapper {
     &:nth-child(1) {
       margin-right: 0;
@@ -326,7 +326,7 @@
   }
   .footer-container {
     a {
-      font-family: "Montserrat";
+      font-family: 'Montserrat';
       font-style: normal;
       font-weight: 500;
       font-size: 14px;

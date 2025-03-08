@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
 }
 
 .physical {
@@ -10,9 +10,9 @@
   height: 100%;
 }
 
-.physicalbutton{
+.physicalbutton {
   border: none;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -24,13 +24,13 @@
   padding: 15px 40px;
   width: 270px;
   margin-left: 20px;
-  @media screen and (max-width: 426px) {
-     margin: 0 auto;
+  @media screen and (max-width: 450px) {
+    margin: 0 auto;
   }
 }
-.physicalbutton:hover{
+.physicalbutton:hover {
   border: none;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -46,7 +46,7 @@
   flex-direction: row;
   justify-content: space-between;
 
-  @media screen and (max-width: 426px) {
+  @media screen and (max-width: 450px) {
     flex-direction: column;
   }
 }
@@ -61,7 +61,7 @@
   justify-content: center;
   margin-bottom: 141px;
 
-  @media screen and (max-width: 426px) {
+  @media screen and (max-width: 450px) {
     margin-bottom: 0;
   }
 }
@@ -72,7 +72,7 @@
   height: 725px;
   margin-top: -95px;
 
-  @media screen and (max-width: 426px) {
+  @media screen and (max-width: 450px) {
     position: static;
     width: 100%;
   }
@@ -99,7 +99,7 @@ ul {
   list-style: none;
 
   /* Remove default bullets */
-  @media screen and (max-width: 426px) {
+  @media screen and (max-width: 450px) {
     padding: 0 25px;
 
     li {
@@ -109,9 +109,9 @@ ul {
 }
 
 ul li::before {
-  content: "\2022";
+  content: '\2022';
   /* Add content: \2022 is the CSS Code/unicode for a bullet */
-  content: "•";
+  content: '•';
   color: #1942df;
   font-weight: bold;
   display: inline-block;
@@ -137,7 +137,7 @@ ul li::before {
     line-height: 33px;
     margin-bottom: 25px;
 
-    @media screen and (max-width: 426px) {
+    @media screen and (max-width: 450px) {
       font-size: 18px;
       line-height: 22px;
     }
@@ -154,7 +154,7 @@ ul li::before {
     line-height: 33px;
     margin-bottom: 25px;
 
-    @media screen and (max-width: 426px) {
+    @media screen and (max-width: 450px) {
       font-size: 18px;
       line-height: 22px;
       margin-right: 0;
@@ -171,7 +171,7 @@ ul li::before {
   display: flex;
   justify-content: space-between;
 
-  @media screen and (max-width: 426px) {
+  @media screen and (max-width: 450px) {
     flex-wrap: wrap;
   }
 }
@@ -196,7 +196,7 @@ ul li::before {
   box-shadow: 0px 0px 20px rgba(51, 96, 231, 0.2);
   background: linear-gradient(110.42deg, #fff 0%, #fff 100%);
 
-  @media screen and (max-width: 426px) {
+  @media screen and (max-width: 450px) {
     width: 100%;
     margin-bottom: 50px;
   }
@@ -207,7 +207,7 @@ ul li::before {
     width: 100%;
   }
 
-  @media screen and (max-width: 426px) {
+  @media screen and (max-width: 450px) {
     margin-right: 0;
   }
 
@@ -224,7 +224,6 @@ ul li::before {
 }
 
 .box3 {
-
   //   transition: all ease 0.5s;
   &:hover {
     color: white;
@@ -239,7 +238,6 @@ ul li::before {
 }
 
 .box3 {
-
   //   transition: all ease 0.5s;
   &:hover {
     color: white;
@@ -248,7 +246,6 @@ ul li::before {
 }
 
 .box-container {
-
   //   transition: all ease 0.5s;
   &:hover {
     color: white;
@@ -265,7 +262,7 @@ ul li::before {
   color: #1942df;
   margin-bottom: 20px;
 
-  @media screen and (max-width: 426px) {
+  @media screen and (max-width: 450px) {
     font-size: 18px;
     line-height: 22px;
   }
@@ -277,7 +274,7 @@ ul li::before {
   font-size: 19px;
   line-height: 23px;
 
-  @media screen and (max-width: 426px) {
+  @media screen and (max-width: 450px) {
     font-size: 17px;
     line-height: 21px;
   }
@@ -287,7 +284,7 @@ ul li::before {
   width: 157px;
   height: 164px;
 
-  @media screen and (max-width: 426px) {
+  @media screen and (max-width: 450px) {
     width: 100px;
   }
 }
@@ -300,7 +297,7 @@ ul li::before {
   text-align: center;
 
   img {
-    @media screen and (max-width: 426px) {
+    @media screen and (max-width: 450px) {
       width: 85px;
       object-fit: contain;
     }
@@ -315,7 +312,7 @@ ul li::before {
   text-align: center;
 
   img {
-    @media screen and (max-width: 426px) {
+    @media screen and (max-width: 450px) {
       width: 100px;
     }
   }
@@ -328,13 +325,13 @@ ul li::before {
 #ph1 {
   margin-top: 80px;
 
-  @media screen and (max-width: 426px) {
+  @media screen and (max-width: 450px) {
     margin: 0;
   }
 }
 
 h1.physicalh {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
   font-size: 60px;
@@ -344,7 +341,7 @@ h1.physicalh {
   width: 968px;
   margin-top: 30px;
 
-  @media screen and (max-width: 426px) {
+  @media screen and (max-width: 450px) {
     width: 357px;
     font-style: normal;
     font-weight: 700;
@@ -360,7 +357,7 @@ h1.physicalh {
 .physicalp {
   width: 531px;
   margin-left: 25px;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
   font-size: 19px;
@@ -368,7 +365,7 @@ h1.physicalh {
 
   color: #231f20;
 
-  @media screen and (max-width: 426px) {
+  @media screen and (max-width: 450px) {
     width: 324px;
     font-style: normal;
     font-weight: 500;
@@ -378,7 +375,7 @@ h1.physicalh {
 }
 
 .physicali {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
   font-size: 19px;

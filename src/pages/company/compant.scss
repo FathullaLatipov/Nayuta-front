@@ -1,13 +1,12 @@
-
 .company-banner {
   margin-top: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  @media screen and (max-width: 426px) {
+  @media screen and (max-width: 450px) {
     flex-direction: column;
   }
-  
+
   .banner-title {
     h2 {
       font-style: normal;
@@ -16,7 +15,7 @@
       line-height: 73px;
       color: #1942df;
       margin-bottom: 60px;
-      @media screen and (max-width: 426px) {
+      @media screen and (max-width: 450px) {
         font-size: 30px;
         line-height: 137%;
       }
@@ -28,7 +27,7 @@
       line-height: 28px;
       color: #000000;
       margin-bottom: 30px;
-      @media screen and (max-width: 426px) {
+      @media screen and (max-width: 450px) {
         font-size: 16px;
         line-height: 20px;
       }
@@ -38,7 +37,7 @@
     img {
       width: 500px;
       height: 500px;
-      @media screen and (max-width: 426px) {
+      @media screen and (max-width: 450px) {
         width: 100%;
         object-fit: contain;
       }
@@ -62,7 +61,7 @@
     top: 70px;
     width: 137px;
     height: 137px;
-    @media screen and (max-width: 426px) {
+    @media screen and (max-width: 450px) {
       display: none;
     }
   }
@@ -72,7 +71,7 @@
     bottom: 0;
     width: 137px;
     height: 137px;
-    @media screen and (max-width: 426px) {
+    @media screen and (max-width: 450px) {
       display: none;
     }
   }
@@ -82,7 +81,7 @@
     top: 0;
     width: 137px;
     height: 137px;
-    @media screen and (max-width: 426px) {
+    @media screen and (max-width: 450px) {
       display: none;
     }
   }
@@ -92,12 +91,12 @@
     top: 130px;
     position: absolute;
     right: 0;
-    @media screen and (max-width: 426px) {
+    @media screen and (max-width: 450px) {
       display: none;
     }
   }
   .pdf-item {
-    @media screen and (max-width: 426px) {
+    @media screen and (max-width: 450px) {
       margin-left: 0;
       a {
         display: block;
@@ -125,7 +124,7 @@
     line-height: 49px;
     // margin-bottom: 20px;
     color: #1942df;
-    @media screen and (max-width: 426px) {
+    @media screen and (max-width: 450px) {
       margin-bottom: 20px;
       font-size: 30px;
       line-height: 137%;
@@ -139,7 +138,7 @@
 
     margin-bottom: 20px;
     color: #000000;
-    @media screen and (max-width: 426px) {
+    @media screen and (max-width: 450px) {
       font-size: 16px;
       line-height: 20px;
     }
@@ -147,7 +146,7 @@
   .mission-section {
     display: flex;
     align-items: center;
-    @media screen and (max-width: 426px) {
+    @media screen and (max-width: 450px) {
       flex-direction: column;
       img {
         width: 100%;
@@ -157,5 +156,5 @@
 }
 .pdf-item a {
   text-decoration-line: underline;
-  color: #231F20;
+  color: #231f20;
 }

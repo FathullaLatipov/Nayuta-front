@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
-@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css');
 
 * {
   padding: 0;
@@ -62,7 +62,7 @@
     }
 
     .navbar-link {
-      font-family: "Montserrat";
+      font-family: 'Montserrat';
       font-style: normal;
       font-weight: 600;
       font-size: 19px;
@@ -228,7 +228,7 @@
   margin-right: auto;
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 450px) {
   .lang-container {
     display: block;
   }
@@ -273,7 +273,7 @@
 }
 
 /* for all inputs of type checkbox */
-input[type="checkbox"] {
+input[type='checkbox'] {
   display: none;
 }
 
@@ -314,7 +314,7 @@ a {
 }
 
 .lang-menu .selected-lang:before {
-  content: "";
+  content: '';
   display: inline-block;
   width: 32px;
   height: 32px;
@@ -357,7 +357,7 @@ a {
 }
 
 .lang-menu ul li a:before {
-  content: "";
+  content: '';
   display: inline-block;
   width: 25px;
   height: 25px;
@@ -384,7 +384,7 @@ a {
 }
 
 .lang-menu ul li.langli::before {
-  content: "";
+  content: '';
 }
 
 .links a.contacts {
@@ -392,7 +392,7 @@ a {
   // border: 1px solid #ffffff;
   border-radius: 15.5px;
   padding: 3px 26px;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
   font-size: 19px;

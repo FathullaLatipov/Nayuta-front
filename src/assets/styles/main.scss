@@ -10,7 +10,7 @@ body {
     padding-right: 0;
   }
 }
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 450px) {
   body {
     margin: 0;
     padding: 80px 0 0 0;
@@ -76,7 +76,7 @@ a {
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box;
-  @media screen and (max-width: 426px) {
+  @media screen and (max-width: 450px) {
     max-width: 363px;
     padding: 0 10px;
   }
@@ -124,8 +124,8 @@ input {
   font-weight: 600;
   font-size: 19px;
   line-height: 23px;
-  
-  color: #231F20;
+
+  color: #231f20;
 }
 
 .accordion-item:first-of-type {

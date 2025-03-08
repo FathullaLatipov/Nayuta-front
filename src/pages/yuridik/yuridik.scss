@@ -10,7 +10,7 @@
   img {
     width: 157px;
     height: 164px;
-    @media screen and (max-width: 426px) {
+    @media screen and (max-width: 450px) {
       width: 85px;
       object-fit: contain;
     }
@@ -19,7 +19,7 @@
 .yuridik {
   margin-top: 70px;
   .accordion-body {
-    @media screen and (max-width: 426px) {
+    @media screen and (max-width: 450px) {
       // overflow: scroll;
     }
     li {
@@ -35,11 +35,11 @@
   }
   .accordion-button {
     &:after {
-      content: "";
+      content: '';
       right: 30px;
       position: absolute;
       top: 30px;
-      background-image: url("./arrow.svg");
+      background-image: url('./arrow.svg');
       background-size: contain;
     }
   }
@@ -49,7 +49,7 @@
     padding: 0 0 50px 0;
     margin-top: 135px;
 
-    @media screen and (max-width: 426px) {
+    @media screen and (max-width: 450px) {
       flex-direction: column;
       margin-top: 5px;
       padding: 0;
@@ -57,7 +57,7 @@
     }
 
     .banner-title {
-      @media screen and (max-width: 426px) {
+      @media screen and (max-width: 450px) {
         width: 100%;
 
         p {
@@ -67,7 +67,7 @@
         }
 
         h2 {
-          font-family: "Montserrat";
+          font-family: 'Montserrat';
           font-style: normal;
           font-weight: 700;
           font-size: 30px;
@@ -102,7 +102,7 @@
       position: absolute;
       right: 0;
 
-      @media screen and (max-width: 426px) {
+      @media screen and (max-width: 450px) {
         position: static;
 
         img {
@@ -143,7 +143,7 @@
   }
 
   .grid-accordion {
-    @media screen and (max-width: 426px) {
+    @media screen and (max-width: 450px) {
       grid-template-columns: 1fr;
     }
 
@@ -152,7 +152,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     .accordion-item {
-      @media screen and (max-width: 426px) {
+      @media screen and (max-width: 450px) {
         width: 100%;
         margin-bottom: 160px;
       }
@@ -209,7 +209,7 @@
               margin-bottom: 30px;
               line-height: 33px;
               color: #1942df;
-              content: " ";
+              content: ' ';
             }
 
             p {
@@ -249,7 +249,7 @@
   }
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 450px) {
   .yuridik {
     margin-top: 0;
     .accordion {
@@ -338,7 +338,7 @@
   display: flex;
   align-items: center;
   border: none;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -354,7 +354,7 @@
   img {
     margin: 10px;
   }
-  @media screen and (max-width: 426px) {
+  @media screen and (max-width: 450px) {
     margin-bottom: 180px;
     margin-left: 40px;
   }
@@ -375,7 +375,7 @@
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 500ms;
-  @media screen and (max-width: 426px) {
+  @media screen and (max-width: 450px) {
     display: block;
   }
   &.show {
@@ -413,7 +413,7 @@
   img {
     margin-right: 10px;
   }
-  @media screen and (max-width: 426px) {
+  @media screen and (max-width: 450px) {
     display: none;
   }
 }
