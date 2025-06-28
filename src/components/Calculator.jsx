@@ -143,10 +143,13 @@ const Calculator = () => {
             <Form.Select disabled onChange={(e) => setSchedule(e.target.value)} aria-label="Default select example">
               <option value="Годовых">{t("calculator.inputs.yiliga")}</option>
             </Form.Select>
-            <Form.Group className="w-100"
-              controlId="formBasicPassword">
+            <Form.Group className="w-100" controlId="formBasicPassword">
               <Form.Label>{t("calculator.labels.qaytarish")}</Form.Label>
-              <Form.Select onChange={(e) => setSchedule(e.target.value)} aria-label="Default select example">
+              <Form.Select 
+                value={schedule} // <-- добавлено
+                onChange={(e) => setSchedule(e.target.value)} 
+                aria-label="Default select example"
+              >
                 <option value="annuity">{t("calculator.annuity")}</option>
                 <option value="differentiated">{t("calculator.dif")}</option>
               </Form.Select>
