@@ -9,7 +9,7 @@ import Pechat from './Vector.svg'
 import { useTranslation } from 'react-i18next';
 import Spinner from './loading/loading';
 import CurrencyInput from 'react-currency-input-field';
-
+// test
 const Calculator = () => {
   const ref = createRef();
 
