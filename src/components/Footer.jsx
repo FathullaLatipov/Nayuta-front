@@ -82,7 +82,7 @@ function Footer() {
           <div id='child3' className='footer-link-items'>
             <Link to='/'>{t("footer.left7")}</Link>
             <Link to='/'>{t("footer.duju")}</Link>
-            <Link to='/'>{t("footer.sha")}</Link>
+            {/* <Link to='/'>{t("footer.sha")}</Link> */}
             <Link to='/'>{t("footer.yak")}</Link>
           </div>
           <div className='footer-link-items'>

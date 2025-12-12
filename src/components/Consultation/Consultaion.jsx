@@ -32,7 +32,7 @@ const Consultaion = () => {
             </li>
           </ul>
           <p > {t("consul.text")}</p>
-          <a className='consultation-btn' href='tel:+998781503332'>{t("doveriya.callus")}</a>
+          <a className='consultation-btn' href='tel:+998555113332'>{t("doveriya.callus")}</a>
         </div>
         <div className="consulatation-right">
           <img className='consultation-img' src={consultation}

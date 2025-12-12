@@ -79,9 +79,9 @@ const Physical = () => {
                   <div className="sale">
                   <p>{t("physical.year")}</p>
                   <img src={item?.first_image} alt="" />
-                    <p>{t("physical.start")}</p>
+                    {/* <p>{t("physical.start")}</p> */}
                     <img src={item?.second_image} alt="" />
-                    <p>{t("physical.end")}</p>
+                    {/* <p>{t("physical.end")}</p> */}
                   
                   </div>
                 </div>

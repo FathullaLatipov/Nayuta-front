@@ -15,13 +15,13 @@
 
 .products-container {
   width: 100%;
-  height: 600px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  align-items: center;
-  // margin-bottom: 61px !important;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;       /* центрирует карточки внутри ячеек */
+  gap: 20px;                   /* расстояние между карточками */
+  padding-bottom: 40px;
+  justify-content: center; 
 }
-
 .products {
   display: flex;
   flex-direction: column;
