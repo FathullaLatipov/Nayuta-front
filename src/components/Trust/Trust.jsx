@@ -14,7 +14,7 @@ const Trust = () => {
           <p>{t("doveriya.text")}<a className='license' href='https://cbu.uz/upload/licen/mmt/97_nayuta.jpg'>{t("doveriya.link")}</a></p>
           <h5>{t("doveriya.questions")}</h5>
           <p className='text2'>{t("doveriya.call")}</p>
-          <a className='trust-btn' href='tel:+998781503332'>{t("doveriya.callus")}</a>
+          <a className='trust-btn' href='tel:+998555113332'>{t("doveriya.callus")}</a>
         </div>
         <div className='trust-img'>
           <img className='approval' src={approval} alt='' />

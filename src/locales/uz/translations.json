@@ -64,9 +64,9 @@
         "title": "Yuridik shaxslar",
         "text1": "Yuridik shaxslar uchun kreditlar biznesning moliyaviy ko’rsatkichlarini oshirish va to’lov qobiliyatini saqlab qolgan holda moliyaviy stabillashtirishga yordam beradi. Biznes uchun ko’proq takliflarimiz haqida quyidan bilib oling.",
         "text2": "Quyida bizning biznes takliflarimiz haqida ko'proq bilib oling.",
-        "start": "dan",
-        "end": "gacha",
-        "year": "yiliga"
+        "start": " - ",
+        "end": " ",
+        "year": "Yiliga"
     },
     "company": {
         "title": "Kompaniya haqida",
