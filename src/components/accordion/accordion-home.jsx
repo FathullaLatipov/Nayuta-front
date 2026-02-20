@@ -16,7 +16,7 @@ const AccordionHome = () => {
             <Accordion id="acc" defaultActiveKey="0">
                 {
                     faq?.map((item, key) => (
-                        <Accordion.Item id="accitem" eventKey={key}>
+                        <Accordion.Item id="accitem" eventKey={String(key)} key={key}>
                             <Accordion.Header id="accheader">{item?.title}</Accordion.Header>
                             <Accordion.Body>
                                 <p>{item?.description}</p>

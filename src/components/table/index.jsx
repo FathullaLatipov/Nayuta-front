@@ -46,8 +46,8 @@ const TableHome = () => {
                     </table>
                     <img className='img first' src={UnlockImg} alt="" />
                     <img className='img last' src={UnlockImg} alt="" />
-                    <img className='img keyfirst' src={Key2} />
-                    <img className='img keylast' src={Key} />
+                    <img className='img keyfirst' src={Key2} alt="" />
+                    <img className='img keylast' src={Key} alt="" />
 
                 </div>
             </div>

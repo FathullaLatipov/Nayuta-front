@@ -4,7 +4,6 @@ import "./Calculator.scss";
 import Cancel from '../assets/images/Cancel.svg'
 import { Button, Form, Modal } from "react-bootstrap";
 import { PostData } from '../hooks/request';
-import Pdf from "react-to-pdf";
 import Pechat from './Vector.svg'
 import { useTranslation } from 'react-i18next';
 import Spinner from './loading/loading';
@@ -196,7 +195,7 @@ const Calculator = () => {
                     <h1>{t("parametr.rezultat")}</h1>
                     <p>{t("parametr.jami")} <span>{data?.total_payments.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ") + ' сум'}</span></p>
                     <p>{t("parametr.ortiqcha")} <span>{data?.overpayment.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ") + ' сум'}</span></p>
-                   <a href={data?.pdf} target="_blank" className='pechat'><img src={Pechat} alt="" /> {t("parametr.pechat")}</a>
+                   <a href={data?.pdf} target="_blank" rel="noreferrer" className='pechat'><img src={Pechat} alt="" /> {t("parametr.pechat")}</a>
                   </div>
                 </div>
                 <Modal.Body className='table-responsive text-nowrap' ref={ref}>

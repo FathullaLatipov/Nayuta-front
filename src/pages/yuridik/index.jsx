@@ -1,5 +1,5 @@
 import './yuridik.scss'
-import React, { useState } from 'react'
+import React from 'react'
 import YuridikImg from '../../assets/images/yuridik.svg'
 import { Accordion } from 'react-bootstrap'
 import parse from 'html-react-parser';
@@ -13,7 +13,6 @@ import { Helmet } from 'react-helmet';
 
 
 const Yuridik = () => {
-    const [showMore, setShowMore] = useState(false);
     const { legalcredit } = useUserContext()
     const { t } = useTranslation()
     const scrollDirection = useScrollDirection();

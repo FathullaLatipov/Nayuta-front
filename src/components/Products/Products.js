@@ -6,12 +6,7 @@ import {Link} from 'react-router-dom'
 
 const Products = () => {
   const { products } = useUserContext()
-  const { t } = useTranslation();
-
-  const Products = () =>{
-    const {products} = useUserContext()
-    const {t} = useTranslation()
-  }
+  const { t } = useTranslation()
 
   return (
     <div className='productspage'>

@@ -150,7 +150,7 @@ const Partners = () => {
                 <ul className="partners__commands-list">
                     {data.teamList.map((item) => (
                         <li className="partners__commands-item">
-                            <img className="partners__commands-img" src={item.image}/>
+                            <img className="partners__commands-img" src={item.image} alt="" />
                             <div className="partners__commands-info">
                                 <h4 className="partners__commands-name">{item.name}</h4>
                                 {/* <span className="partners__commands-spec">Back-End developer</span> */}
@@ -164,7 +164,7 @@ const Partners = () => {
             </div>
 
             <div className="partners__getpdf container">
-                <a className="partners__getpdf-link" href={data.pdf.pdf} target="_blank">Get pdf</a>
+                <a className="partners__getpdf-link" href={data.pdf.pdf} target="_blank" rel="noreferrer">Get pdf</a>
             </div>
 
         </div>

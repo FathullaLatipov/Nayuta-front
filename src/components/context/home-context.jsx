@@ -11,6 +11,7 @@ export const UserContextProvider = ({ children }) => {
     const [individualcreditType, setIndividualcreditType] = useState()
     const [individualcredit, setIndividualcredit] = useState()
     const [legalcredit, setLegalcredit] = useState()
+    // eslint-disable-next-line no-unused-vars -- products used in context value, consumed by Products.jsx
     const [products, setProducts] = useState()
     const [whosecredit, setWhosecredit] = useState()
     const [lang, setLang] = useState('ru');

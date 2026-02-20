@@ -8,7 +8,6 @@ import Copyr from './cop.svg'
 import { Helmet } from 'react-helmet';
 import { HashLink } from 'react-router-hash-link';
 import useScrollDirection from "../pages/yuridik/scroll";
-import ScrollToTop from './scrollToTop';
 
 
 function Footer() {
@@ -63,19 +62,18 @@ function Footer() {
               {/* <i className="fa-solid" id='icons'></i> */}
               +998 88 147-00-33
             </a>
-            <a href='https://t.me/nayuta_mmt' target='_blank'>
+            <a href='https://t.me/nayuta_mmt' target='_blank' rel="noreferrer">
               <i className="fa-brands fa-telegram" id='icons'></i>
               Telegram
             </a>
-            <a href='https://www.instagram.com/nayuta.uz/?igshid=MTIyMzRjYmRlZg%3D%3D' target='_blank'>
+            <a href='https://www.instagram.com/nayuta.uz/?igshid=MTIyMzRjYmRlZg%3D%3D' target='_blank' rel="noreferrer">
               <i className="fab fa-instagram" id='icons' />
               Instagram
             </a>
-            <Link to='javascript:void(0)'
-              onClick={() => window.location = 'mailto: info@nayuta.uz'}>
+            <a href="mailto:info@nayuta.uz">
               <i className="fa-regular fa-envelope" id='icons'></i>
               info@nayuta.uz
-            </Link>
+            </a>
           </div>
         </div>
         <div className='footer-link-wrapper'>
@@ -87,7 +85,7 @@ function Footer() {
           </div>
           <div className='footer-link-items'>
             <Link to='/' className='addresslink'>{t("footer.left8")}</Link>
-            <Link to='https://yandex.uz/maps/10335/tashkent/?ll=69.263914%2C41.275492&mode=search&sll=69.264000%2C41.275333&source=constructorLink&text=41.275333%2C69.264000&um=constructor%3Aa6d13edbb38b22e4c446f8712bf01729428a23a560aab6b90796c6c27bf05b58&z=18.56' target='_blank' className='address'>
+            <Link to='https://yandex.uz/maps/10335/tashkent/?ll=69.263914%2C41.275492&mode=search&sll=69.264000%2C41.275333&source=constructorLink&text=41.275333%2C69.264000&um=constructor%3Aa6d13edbb38b22e4c446f8712bf01729428a23a560aab6b90796c6c27bf05b58&z=18.56' target='_blank' rel="noreferrer" className='address'>
 
               {t("footer.left9")}
               <br />

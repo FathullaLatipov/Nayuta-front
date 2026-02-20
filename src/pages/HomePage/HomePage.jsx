@@ -10,13 +10,11 @@ import TableHome from '../../components/table';
 import Trust from '../../components/Trust/Trust';
 import AccordionHome from '../../components/accordion/accordion-home';
 import { useUserContext } from '../../components/context/home-context';
-import { useTranslation } from 'react-i18next';
 import Spinner from '../../components/loading/loading';
 import { Helmet } from 'react-helmet';
 
 const HomePage = () => {
   const { carousels, loading } = useUserContext()
-  const { t } = useTranslation();
   return (
     <>
       <Currency />

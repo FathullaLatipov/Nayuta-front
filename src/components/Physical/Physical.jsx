@@ -89,7 +89,7 @@ const Physical = () => {
             </>
           ))
         }
-         <p className='producttextph'>{t("products.text1")} <a href='https://t.me/nayuta_mmt' target='_blank'>{t("products.a")}</a> {t("products.text2")}</p>
+         <p className='producttextph'>{t("products.text1")} <a href='https://t.me/nayuta_mmt' target='_blank' rel="noreferrer">{t("products.a")}</a> {t("products.text2")}</p>
       </div>
       {/* <div className="box3 container">
         <div className="box-container2">

@@ -1,7 +1,7 @@
 import React from "react";
 
 const ArrowLeft = (props) => {
-    const { className, style, onClick } = props;
+    const { onClick } = props;
 
     return (
         <div className="arrow-left" onClick={onClick}>
