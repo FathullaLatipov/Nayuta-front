@@ -59,6 +59,23 @@ export const getJapaneesePdf = async () => {
     }
 }
 
+export const getCompanyPageData = async (lang = 'ru') => {
+    try {
+        const response = await fetch(`${URL}/company/`, {
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+                'Accept-Language': lang
+            }
+        });
+        const data = await response.json();
+        return data;
+    } catch (error) {
+        console.log(error);
+        return null;
+    }
+}
+
 export function PutData(endpoint, data, token) {
     return fetch(`${URL + endpoint}`, {
         method: 'PUT',
@@ -84,18 +101,24 @@ export function PatchData(endpoint, data, token) {
 
 // const { lang } = useUserContext()
 export function GetData(endpoint, lang) {
-    return (
-        fetch(`${URL + endpoint}`, {
-            method: "GET",
-            headers: {
-                // "Authorization": 'Bearer ' + token,
-                'Accept': 'application/json',
-                'Content-Type': 'application/json',
-                // "Access-Control-Request-Headers": "*",
-                "Accept-Language": lang
-            },
+    return fetch(`${URL + endpoint}`, {
+        method: "GET",
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json',
+            "Accept-Language": lang || 'ru'
+        },
+    }).then((response) => {
+        if (!response.ok) {
+            return {}
+        }
+        const text = response.text()
+        return text.then(t => {
+            try {
+                return t ? JSON.parse(t) : {}
+            } catch {
+                return {}
+            }
         })
-            .then((response) => {
-                return response.json();
-            }))
+    })
 }

@@ -20,11 +20,15 @@ export const UserContextProvider = ({ children }) => {
     useEffect(() => {
         setLoading(true)
         GetData(`/exchange-rates/`, lang)
-        .then(data => {
-            setRates(data);
-            setLoading(false);
-        })
-            .catch(err => console.log(err))
+            .then(data => {
+                setRates(data && typeof data === 'object' ? data : {});
+                setLoading(false);
+            })
+            .catch(err => {
+                console.log(err);
+                setRates({});
+                setLoading(false);
+            })
         GetData(`/FAQ/`, lang)
             .then(data => {
                 setFaq(data)
