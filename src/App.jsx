@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './assets/styles/main.scss';
 import { Routes, Route } from 'react-router-dom'
@@ -21,6 +22,7 @@ const App = () => {
   }, [active])
   return (
     <>
+      <SpeedInsights />
       <Navbar />
       
       <Routes>
